@@ -108,20 +108,43 @@ namespace Assignment01
 
             #region 8
             // Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
-            Console.WriteLine(" Q08 ");
-            {
-                string yearText = "2023";
-                int year = int.Parse(yearText);
-                Console.WriteLine(year);
+            // Console.WriteLine(" Q08 ");
+            // {
+            //   string yearText = "2023";
+            //  int year = int.Parse(yearText);
+            //  Console.WriteLine(year);
 
-                string badText = "abc";
-                int number;
-                if (int.TryParse(badText, out number))
-                    Console.WriteLine(number);
-                else
-                    Console.WriteLine("Invalid number");
+            //  string badText = "abc";
+            //  int number;
+            // if (int.TryParse(badText, out number))
+            //     Console.WriteLine(number);
+            //  else
+            //     Console.WriteLine("Invalid number");
+            // }
+            #endregion
+
+            #region 9
+            // Given int pages = 464;, convert it into a string using ToString() and print its type using GetType() to prove it's now a string
+            // Console.WriteLine(" Q09 ");
+            // {
+            //    int pages = 464;
+            //    string pagesText = pages.ToString();
+            //     Console.WriteLine(pagesText.GetType());
+            // }
+            #endregion
+            #region 10
+
+            // Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int variable, and print both.
+            Console.WriteLine(" Q10 ");
+            {
+                int copies = 100;
+                object boxed = copies;
+                int unboxed = (int)boxed;
+                Console.WriteLine(boxed);
+                Console.WriteLine(unboxed);
             }
             #endregion
+
         }
 
     }
